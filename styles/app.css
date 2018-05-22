@@ -66,14 +66,12 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 18px; }
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px; }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 20px;
   margin-top: 0; }
 
 strong {
@@ -89,7 +87,6 @@ a {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  margin-bottom: .75em;
   text-transform: uppercase; }
   @media (max-width: 460px) {
     .c-intro__title {

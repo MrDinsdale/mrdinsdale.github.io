@@ -7,16 +7,14 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-size: $base-font-size;
+  margin-bottom: 20px;
 }
 
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 20px;
   margin-top: 0;
 }
 
