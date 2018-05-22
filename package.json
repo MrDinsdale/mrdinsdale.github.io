@@ -1,0 +1,23 @@
+{
+  "name": "mrdinsdale.github.io",
+  "version": "1.0.0",
+  "description": "Site for Joe Dinsdale",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDinsdale/mrdinsdale.github.io.git"
+  },
+  "author": "Joe Dinsdale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDinsdale/mrdinsdale.github.io/issues"
+  },
+  "homepage": "https://github.com/MrDinsdale/mrdinsdale.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

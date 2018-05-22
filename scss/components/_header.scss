@@ -1,0 +1,47 @@
+.c-header {
+  background: linear-gradient(to top, $grey-dark 0%,#303030 100%);
+  // background-color: $grey-dark;
+  height: 400px;
+  min-height: 50vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c-brand {
+  left: 40px;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-brand__logo {
+  display: block;
+  margin: 0 auto 10px;
+  vertical-align: bottom;
+  width: 80px;
+}
+
+.c-brand__title,
+.c-brand__subtitle {
+  color: $cream;
+  font-family: $font-headline;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c-brand__title {
+  display: inline-block;
+  font-family: $font-headline;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c-brand__subtitle {
+  font-weight: 400;
+}

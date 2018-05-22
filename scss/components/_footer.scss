@@ -1,0 +1,21 @@
+.c-footer {
+  padding: 30px 40px 10px;
+  text-align: center;
+}
+
+.c-footer__social-link {
+  color: $grey-mid;
+  display: inline-block;
+  padding: .25em .5em;
+  width: 40px;
+
+  &:hover {
+    color: $orange;
+    transition: .3s;
+  }
+}
+
+.c-footer__copyright {
+  color: $grey-mid;
+  font-size: 10px;
+}
