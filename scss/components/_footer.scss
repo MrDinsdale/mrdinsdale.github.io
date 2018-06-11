@@ -21,9 +21,10 @@
   &__icon {
     bottom: 5px;
     color: $cream;
+    display: block;
     left: 5px;
+    width: 30px;
     position: absolute;
-    right: 5px;
     top: 5px;
     transition: transform .2s, opacity .2s;
   }
