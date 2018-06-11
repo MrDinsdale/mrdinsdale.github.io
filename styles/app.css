@@ -157,21 +157,51 @@ a {
   animation: brandFade .8s linear forwards; }
 
 .c-footer {
+  margin-top: 50px;
   padding: 30px 40px 10px;
   text-align: center; }
-
-.c-footer__social-link {
-  color: #787878;
-  display: inline-block;
-  padding: .25em .25em 0;
-  width: 40px; }
-  .c-footer__social-link:hover {
-    color: #f29a3f;
-    transition: .3s; }
 
 .c-footer__copyright {
   color: #787878;
   font-size: 10px; }
+
+.c-social-link {
+  background-color: #262525;
+  display: inline-block;
+  height: 40px;
+  overflow: hidden;
+  margin: .25em .25em 0;
+  position: relative;
+  width: 40px; }
+  .c-social-link__icon {
+    bottom: 5px;
+    color: #f3f0ee;
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: transform .2s, opacity .2s; }
+  .c-social-link::after {
+    content: '+';
+    bottom: 0;
+    color: #f3f0ee;
+    font-size: 40px;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transform: translateY(40px);
+    transition: transform .2s, opacity .2s; }
+  .c-social-link:hover {
+    background-color: #f29a3f; }
+    .c-social-link:hover .c-social-link__icon {
+      opacity: .5;
+      transform: translateY(-40px); }
+    .c-social-link:hover::after {
+      opacity: 1;
+      transform: translateY(-12px); }
 
 .c-divider {
   background-color: #f29a3f;
