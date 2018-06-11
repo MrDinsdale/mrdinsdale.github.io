@@ -105,6 +105,14 @@ a {
   max-width: 560px;
   padding: 0 40px; }
 
+@keyframes brandFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98); }
+  80% {
+    opacity: 0;
+    transform: scale(0.95); } }
+
 .c-header {
   background: linear-gradient(to top, #262525 0%, #303030 100%);
   height: 400px;
@@ -141,10 +149,12 @@ a {
   font-family: "Oswald", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  animation: brandFade .8s linear forwards; }
 
 .c-brand__subtitle {
-  font-weight: 400; }
+  font-weight: 400;
+  animation: brandFade .8s linear forwards; }
 
 .c-footer {
   padding: 30px 40px 10px;
@@ -169,6 +179,34 @@ a {
   height: 2px;
   margin: 40px 0;
   width: 40px; }
+
+@keyframes jAnimation {
+  0% {
+    stroke-dashoffset: 88; }
+  50% {
+    stroke-dashoffset: 88; }
+  78% {
+    stroke-dashoffset: 0; } }
+
+@keyframes dAnimation {
+  0% {
+    stroke-dashoffset: -63; }
+  77% {
+    stroke-dashoffset: -63; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+.c-logo__j {
+  stroke-dasharray: 88;
+  stroke-dashoffset: 0;
+  will-change: stroke-dashoffset;
+  animation: jAnimation 1.5s linear forwards; }
+
+.c-logo__d {
+  stroke-dasharray: 63;
+  stroke-dashoffset: 0;
+  will-change: stroke-dashoffset;
+  animation: dAnimation 1.5s linear forwards; }
 
 .u-text-orange {
   color: #f29a3f !important; }

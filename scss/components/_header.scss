@@ -1,3 +1,14 @@
+@keyframes brandFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
 .c-header {
   background: linear-gradient(to top, $grey-dark 0%,#303030 100%);
   // background-color: $grey-dark;
@@ -40,8 +51,10 @@
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
+  animation: brandFade .8s linear forwards;
 }
 
 .c-brand__subtitle {
   font-weight: 400;
+  animation: brandFade .8s linear forwards;
 }
