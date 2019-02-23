@@ -1,3 +1,7 @@
+// ==================================================================
+//  Elements / Typography
+// ==================================================================
+
 body {
   font-family: $font-body;
   font-size: $base-font-size;
@@ -9,13 +13,12 @@ h1,
 h2,
 h3 {
   font-size: $base-font-size;
-  margin-bottom: 20px;
+  margin-bottom: $global-spacing;
 }
 
-
 p {
-  margin-bottom: 20px;
   margin-top: 0;
+  margin-bottom: $global-spacing;
 }
 
 strong {
@@ -23,7 +26,7 @@ strong {
 }
 
 a {
-  color: $orange;
+  color: color(orange);
   text-decoration: none;
 
   &:hover {

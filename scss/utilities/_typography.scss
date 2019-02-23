@@ -1,5 +1,17 @@
+// ==================================================================
+//  Utilities / Typography
+// ==================================================================
+
+.u-text-grey-dark {
+  color: color(grey-dark) !important;
+}
+
 .u-text-orange {
-  color: $orange !important;
+  color: color(orange) !important;
+}
+
+.u-text-cream {
+  color: color(cream) !important;
 }
 
 .u-text {

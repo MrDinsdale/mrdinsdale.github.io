@@ -1,16 +1,42 @@
 // ==================================================================
-//  Colours
+//  Settings
 // ==================================================================
-$black: #111;
-$white: #fff;
-$cream: #f3f0ee;
-$grey-dark: #262525;
-$grey-mid: #787878;
-$orange: #f29a3f;
 
-// ==================================================================
+//  Colours
+// ------------------------------------
+
+$colors: (
+  black: #111,
+  white: #fff,
+  grey-dark: #262525,
+  grey-mid: #787878,
+  orange: #f29a3f cream: #f3f0ee
+);
+
+//  Gradients
+// ------------------------------------
+
+$gradients: (
+  orange: (
+    0: #f29a3f,
+    100: #f8b230
+  ),
+  grey-dark: (
+    0: #262525,
+    100: #4a4a4a
+  )
+);
+
 //  Fonts
-// ==================================================================
+// ------------------------------------
+
 $base-font-size: 18px;
-$font-headline: 'Oswald', sans-serif;
-$font-body: 'Lato', serif;
+$font-headline: "Oswald", sans-serif;
+$font-body: "Lato", serif;
+
+//  Spacing
+// ------------------------------------
+
+$global-spacing: 30px;
+$global-spacing-small: $global-spacing / 2;
+$global-spacing-large: $global-spacing * 2;

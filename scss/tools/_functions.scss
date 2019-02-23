@@ -1,0 +1,37 @@
+// ==================================================================
+//  Functions
+// ==================================================================
+
+// map-get-deep()
+// ------------------------------------
+
+// @author Hugo Giraudel (with modifications)
+@function map-get-deep($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+// color()
+// ------------------------------------
+
+@function color($key) {
+  @return map-get-deep($colors, $key);
+}
+
+// convert-to-em()
+// ------------------------------------
+
+@function convert-to-em($value, $base-font-size: 18px) {
+  @if unit($value) == "px" {
+    @return (strip-unit($value / $base-font-size)) * 1em;
+  }
+
+  @if unit($value) == "rem" {
+    @return strip-unit($value) * 1em;
+  } @else {
+    @warn "Value must be em or px.";
+  }
+}
